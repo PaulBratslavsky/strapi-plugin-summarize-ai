@@ -6,7 +6,7 @@ module.exports = {
       path: '/summary/:videoId',
       handler: 'summaryAi.summary',
       config: {
-        middlewares: ["plugin::summary-ai.isUserAuthenticated"],
+        middlewares: ["plugin::strapi-summarize-ai-plugin.isUserAuthenticated"],
       }
     }
   ]
