@@ -3,7 +3,7 @@
 module.exports = ({ strapi }) => ({
   async summary(ctx) {
     ctx.body = await strapi
-      .plugin('summary-ai')
+      .plugin('strapi-summarize-ai-plugin')
       .service('summaryAi')
       .summary(ctx);
   },
